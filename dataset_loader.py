@@ -1,5 +1,3 @@
-# dataset_loader.py
-
 import os
 import cv2
 import torch
