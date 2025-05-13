@@ -1,5 +1,3 @@
-# train.py
-
 import torch
 import torch.nn as nn
 import torch.optim as optim
@@ -7,8 +5,8 @@ from torch.utils.data import DataLoader
 from dataset_loader import DeepfakeDataset
 from cnn_lstm_model import DeepfakeDetector
 
-# Example dummy data
-video_paths = ["data/real1.mp4", "data/fake1.mp4"]  # update with real paths
+# Example data
+video_paths = ["data/real1.mp4", "data/fake1.mp4"]  # to be updated with real paths
 labels = [0, 1]  # 0 = real, 1 = fake
 
 dataset = DeepfakeDataset(video_paths, labels)
